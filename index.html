@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khairan Aldan Kurniawan — Web Developer | SMK Telkom Lampung RPL</title>
+  <meta name="description" content="Portofolio resmi Khairan Aldan Kurniawan: Siswa Rekayasa Perangkat Lunak (RPL) SMK Telkom Lampung, Web Developer & UI Designer bertema Deep Sea Blue Bioluminescent." />
+  <meta name="author" content="Khairan Aldan Kurniawan" />
+  <meta name="keywords" content="Khairan Aldan Kurniawan, SMK Telkom Lampung, RPL, Web Developer, Front-End Developer, Portofolio, Lampung" />
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Khairan Aldan Kurniawan — Web Developer | SMK Telkom Lampung" />
+  <meta property="og:description" content="Portofolio resmi Khairan Aldan Kurniawan: Web Developer & Siswa RPL SMK Telkom Lampung bertema Deep Sea Blue Bioluminescent." />
+  <meta property="og:image" content="assets/avatar.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2305101f'/><circle cx='50' cy='50' r='30' fill='none' stroke='%2300f0ff' stroke-width='8'/><polygon points='40,32 70,50 40,68' fill='%2300ffcc'/></svg>" />
+</head>
+<body>
+
+  <!-- ============================================================
+       PRELOADER SAMUDRA (OCEAN DEEP DIVE)
+  ============================================================ -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-bg-aurora"></div>
+    <div class="preloader-content">
+      <div class="preloader-ring-wrapper">
+        <div class="preloader-ring-outer"></div>
+        <div class="preloader-ring-inner"></div>
+        <div class="preloader-logo-box">
+          <span class="preloader-monogram">KAK</span>
+        </div>
+      </div>
+      <div class="preloader-title">
+        <span class="text-tide-shimmer">KHAIRAN ALDAN</span>
+      </div>
+      <div id="preloader-percent" class="preloader-percent">0%</div>
+      <p id="preloader-status" class="preloader-status">Menyelam ke Samudra Kode...</p>
+      <div class="preloader-bar-track">
+        <div id="preloader-bar-fill" class="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+  <!-- Ambient Bioluminescent Background (Aurora + Bubbles) -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+    <div class="bubbles-container" id="bubbles-container"></div>
+  </div>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <header id="main-header" class="site-header">
+    <nav class="nav-container">
+      <a href="#beranda" class="brand-link" aria-label="Beranda Khairan Aldan">
+        <div class="brand-badge">
+          <span class="brand-initials">KAK</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name text-tide-shimmer">Khairan Aldan</span>
+          <span class="brand-sub">RPL • SMK Telkom</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links">
+        <li><a href="#tentang" class="nav-item">Tentang</a></li>
+        <li><a href="#layanan" class="nav-item">Layanan</a></li>
+        <li><a href="#alur-kerja" class="nav-item">Alur Kerja</a></li>
+        <li><a href="#keahlian" class="nav-item">Keahlian</a></li>
+        <li><a href="#proyek" class="nav-item">Proyek</a></li>
+        <li><a href="#faq" class="nav-item">FAQ</a></li>
+        <li><a href="#alamat" class="nav-item nav-item-game">Gamer HUD 🎮</a></li>
+        <li><a href="#kontak" class="nav-item">Kontak</a></li>
+      </ul>
+
+      <!-- Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#kontak" class="btn-tide btn-nav-cta">
+          <span>Hubungi Saya</span>
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button id="mobile-menu-toggle" type="button" class="btn-menu-toggle" aria-label="Buka Menu Navigasi">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="mobile-drawer-panel">
+      <div class="mobile-drawer-header">
+        <div class="brand-link">
+          <div class="brand-badge"><span class="brand-initials">KAK</span></div>
+          <div class="brand-text">
+            <span class="brand-name text-tide-shimmer">Khairan Aldan</span>
+            <span class="brand-sub">RPL • SMK Telkom Lampung</span>
+          </div>
+        </div>
+        <button id="drawer-close-btn" class="drawer-close-btn" aria-label="Tutup Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#beranda" class="mobile-nav-link">Beranda</a></li>
+        <li><a href="#tentang" class="mobile-nav-link">Tentang</a></li>
+        <li><a href="#layanan" class="mobile-nav-link">Layanan & Solusi</a></li>
+        <li><a href="#alur-kerja" class="mobile-nav-link">Alur Kerja</a></li>
+        <li><a href="#keahlian" class="mobile-nav-link">Keahlian & Teknologi</a></li>
+        <li><a href="#proyek" class="mobile-nav-link">Portofolio Proyek</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        <li><a href="#alamat" class="mobile-nav-link special-game-link">Gamer HUD & Mini Game 🎮</a></li>
+        <li><a href="#kontak" class="mobile-nav-link">Hubungi Saya</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#kontak" class="btn-tide w-full text-center">Konsultasi / Kolaborasi</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section id="beranda" class="hero-section">
+      <div class="hero-container">
+        
+        <!-- Left Column: Copy & Presentation -->
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-pill">
+            <span class="pulse-dot">
+              <span class="pulse-beacon"></span>
+              <span class="pulse-core"></span>
+            </span>
+            <span>Siswa RPL SMK Telkom Lampung • Terbuka untuk Magang & Proyek</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Halo, saya <span class="text-tide-shimmer">Khairan Aldan Kurniawan</span>
+            <span class="hero-subtitle">
+              Seorang <span id="typing-text" class="text-primary typing-target">Web Developer</span><span class="typing-cursor"></span>
+            </span>
+          </h1>
+
+          <!-- Hero Bio -->
+          <p class="hero-description">
+            Siswa <strong>Rekayasa Perangkat Lunak (RPL) di SMK Telkom Lampung</strong> yang bersemangat merancang dan membangun website modern, responsif, cepat, serta fungsional dengan perpaduan estetika samudra dalam yang elegan.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#proyek" class="btn-tide shine-hover">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 19a5 5 0 0 1-5-5v8"></path><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5"></path><circle cx="13" cy="12" r="2"></circle><circle cx="20" cy="19" r="2"></circle></svg>
+              <span>Jelajahi Proyek RPL</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="#tentang" class="btn-ghost-tide shine-hover">
+              <span>Tentang Saya</span>
+            </a>
+          </div>
+
+          <!-- Hero Quick Stats -->
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-number text-tide-shimmer">12+</span>
+                <span class="stat-icon-wrap">🚀</span>
+              </div>
+              <p class="stat-label">Proyek RPL & Web</p>
+              <p class="stat-caption">Aplikasi & Antarmuka</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-number text-tide-shimmer">2+</span>
+                <span class="stat-icon-wrap">🎓</span>
+              </div>
+              <p class="stat-label">Tahun Praktik RPL</p>
+              <p class="stat-caption">SMK Telkom Lampung</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-number text-tide-shimmer">100%</span>
+                <span class="stat-icon-wrap">⚡</span>
+              </div>
+              <p class="stat-label">Dedikasi & Detail</p>
+              <p class="stat-caption">Pixel-Perfect & Clean Code</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive 3D Card & Lo-Fi Music Player -->
+        <div class="hero-visual">
+          
+          <!-- 3D Perspective Tilt Card -->
+          <div class="profile-card-3d-wrapper">
+            <div class="orbit-ring orbit-ring-1"></div>
+            <div class="orbit-ring orbit-ring-2"></div>
+            <div class="neon-pulse-glow"></div>
+
+            <div id="interactive-tilt-card" class="glass-card-premium profile-card-inner">
+              <div class="card-photo-wrapper">
+                <img src="assets/avatar.jpg" alt="Foto Profil Khairan Aldan Kurniawan" class="profile-avatar-img" />
+                <div class="avatar-gradient-overlay"></div>
+                
+                <!-- Bottom identification inside card -->
+                <div class="avatar-bottom-tag">
+                  <div class="avatar-tag-left">
+                    <span class="status-live-beacon"></span>
+                    <div>
+                      <h3 class="tag-title">Khairan Aldan Kurniawan</h3>
+                      <p class="tag-role">Web Developer • SMK Telkom Lampung</p>
+                    </div>
+                  </div>
+                  <span class="country-badge">INDONESIA 🇮🇩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating floating badges -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">⚡</span>
+              <span>60 FPS SMOOTH</span>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">✨</span>
+              <span>CLEAN RPL CODE</span>
+            </div>
+          </div>
+
+          <!-- Integrated Lo-Fi Audio Station (Synthesized Chill Web Audio) -->
+          <div class="glass-card-premium lofi-player-card">
+            <div class="lofi-header">
+              <div class="lofi-title-badge">
+                <span class="pulse-beacon-small"></span>
+                <span class="lofi-station-name">Khairan Lo-Fi Coding Station</span>
+              </div>
+              <span id="lofi-track-counter" class="lofi-track-counter">TRACK 1/3</span>
+            </div>
+
+            <div class="lofi-body">
+              <div class="lofi-cover-art" id="lofi-cover">
+                <span>🎧</span>
+              </div>
+              <div class="lofi-info">
+                <h4 id="lofi-song-title" class="lofi-song-title">Chill Waves & RPL Beats</h4>
+                <p id="lofi-song-sub" class="lofi-song-sub">Bioluminescent Lo-Fi • Khairan Aldan</p>
+              </div>
+              <!-- Equalizer Waveform Bars -->
+              <div class="lofi-equalizer" id="lofi-equalizer">
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="lofi-progress-wrapper" id="lofi-progress-container">
+              <div class="lofi-progress-track">
+                <div class="lofi-progress-fill" id="lofi-progress-bar"></div>
+              </div>
+              <div class="lofi-time-row">
+                <span id="lofi-current-time">0:00</span>
+                <span id="lofi-total-time">2:30</span>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="lofi-controls-row">
+              <div class="lofi-buttons">
+                <button type="button" class="lofi-btn" id="lofi-prev-btn" title="Lagu Sebelumnya" aria-label="Lagu Sebelumnya">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m11 17-5-5 5-5"></path><path d="m18 17-5-5 5-5"></path></svg>
+                </button>
+                <button type="button" class="lofi-btn-play" id="lofi-play-btn" title="Putar / Hentikan Musik" aria-label="Putar / Hentikan Musik">
+                  <svg id="lofi-play-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                </button>
+                <button type="button" class="lofi-btn" id="lofi-next-btn" title="Lagu Berikutnya" aria-label="Lagu Berikutnya">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 17 5-5-5-5"></path><path d="m13 17 5-5-5-5"></path></svg>
+                </button>
+              </div>
+              <span id="lofi-status-label" class="lofi-status-label">⏸ Klik Putar Musik</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Hero Bottom Wave Strip -->
+      <div class="hero-wave-container" aria-hidden="true">
+        <svg class="wave-svg wave-svg-1" viewBox="0 0 2880 120" preserveAspectRatio="none">
+          <path d="M0,60 C240,110 480,10 720,60 C960,110 1200,10 1440,60 C1680,110 1920,10 2160,60 C2400,110 2640,10 2880,60 L2880,120 L0,120 Z"></path>
+        </svg>
+        <svg class="wave-svg wave-svg-2" viewBox="0 0 2880 120" preserveAspectRatio="none">
+          <path d="M0,80 C240,30 480,120 720,80 C960,40 1200,120 1440,80 C1680,30 1920,120 2160,80 C2400,40 2640,120 2880,80 L2880,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RUNNING MARQUEE TECH TICKER
+    ============================================================ -->
+    <div class="tech-marquee-wrapper" aria-hidden="true">
+      <div class="marquee-fade marquee-fade-left"></div>
+      <div class="marquee-fade marquee-fade-right"></div>
+      <div class="marquee-track">
+        <!-- Loop Item Sequence -->
+        <span class="marquee-item"><span>HTML5 Semantik</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>CSS3 & Glassmorphism</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>JavaScript ES6+</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>PHP & OOP</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>MySQL Database</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Tailwind CSS</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Bootstrap 5</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Git & GitHub</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Figma UI/UX</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>SMK Telkom Lampung</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Rekayasa Perangkat Lunak</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>RESTful API</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Mobile-First Web</span><span class="marquee-dot"></span></span>
+        <!-- Repeated items for seamless infinite scroll -->
+        <span class="marquee-item"><span>HTML5 Semantik</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>CSS3 & Glassmorphism</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>JavaScript ES6+</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>PHP & OOP</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>MySQL Database</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Tailwind CSS</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Bootstrap 5</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Git & GitHub</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Figma UI/UX</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>SMK Telkom Lampung</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Rekayasa Perangkat Lunak</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>RESTful API</span><span class="marquee-dot"></span></span>
+        <span class="marquee-item"><span>Mobile-First Web</span><span class="marquee-dot"></span></span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SECTION: TENTANG SAYA (ABOUT ME)
+    ============================================================ -->
+    <section id="tentang" class="section-container">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Profil & Latar Belakang</p>
+        <h2 class="section-title">Membangun antarmuka modern yang fungsional & teruji</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Main Bio Card -->
+        <div class="glass-card-premium about-main-card">
+          <div class="card-kicker">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <span>Perjalanan & Visi RPL</span>
+          </div>
+          <h3 class="about-headline">
+            Memadukan kekuatan logika pemrograman RPL dengan estetika antarmuka web modern.
+          </h3>
+          <p class="about-text">
+            Sebagai siswa di <strong>SMK Telkom Lampung jurusan Rekayasa Perangkat Lunak (RPL)</strong>, ketertarikan saya terhadap dunia teknologi bermula dari eksplorasi logika pemrograman, arsitektur basis data, dan bagaimana sebaris kode dapat bertransformasi menjadi solusi nyata yang bermanfaat bagi masyarakat.
+          </p>
+          <p class="about-text">
+            Fokus keahlian saya terpusat pada <strong>Web Development</strong>: menciptakan sistem web yang tidak hanya memiliki tampilan memukau dan interaktif di berbagai resolusi layar, namun juga didukung struktur kode yang rapi, berkinerja tinggi, dan mudah dikembangkan lebih lanjut.
+          </p>
+
+          <!-- 4 Core Pillars -->
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <span class="pillar-icon">⚡</span>
+              <h4 class="pillar-title">Kinerja Cepat</h4>
+              <p class="pillar-desc">Optimasi struktur & aset ringan</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">🎨</span>
+              <h4 class="pillar-title">UI Elegan</h4>
+              <p class="pillar-desc">Sentuhan bioluminescent & bersih</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">📱</span>
+              <h4 class="pillar-title">100% Responsif</h4>
+              <p class="pillar-desc">Mulus di Ponsel hingga Desktop 4K</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">🛡️</span>
+              <h4 class="pillar-title">Clean Code RPL</h4>
+              <p class="pillar-desc">Modular, terdokumentasi & rapi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Info Summary Card -->
+        <div class="glass-card-premium about-sidebar-card">
+          <div>
+            <div class="card-kicker">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              <span>Informasi Ringkas</span>
+            </div>
+
+            <ul class="quick-info-list">
+              <li class="quick-info-row">
+                <span class="info-label">Nama Lengkap</span>
+                <span class="info-val font-semibold">Khairan Aldan Kurniawan</span>
+              </li>
+              <li class="quick-info-row">
+                <span class="info-label">Sekolah</span>
+                <span class="info-val">SMK Telkom Lampung</span>
+              </li>
+              <li class="quick-info-row">
+                <span class="info-label">Jurusan</span>
+                <span class="info-val font-semibold text-primary">Rekayasa Perangkat Lunak (RPL)</span>
+              </li>
+              <li class="quick-info-row">
+                <span class="info-label">Peran Utama</span>
+                <span class="info-val">Web Developer</span>
+              </li>
+              <li class="quick-info-row">
+                <span class="info-label">Lokasi</span>
+                <span class="info-val">Lampung, Indonesia</span>
+              </li>
+              <li class="quick-info-row">
+                <span class="info-label">Status</span>
+                <span class="status-available-badge">
+                  <span class="pulse-beacon-small"></span>
+                  <span>Siswa Aktif / Siap Magang</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bottom Collaboration Prompt -->
+          <div class="collab-box">
+            <p class="collab-text">Punya proyek atau program magang?</p>
+            <a href="#kontak" class="collab-link">
+              <span>Diskusikan bersama saya</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: LAYANAN & SOLUSI (SERVICES)
+    ============================================================ -->
+    <section id="layanan" class="section-container">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Layanan & Solusi</p>
+        <h2 class="section-title">Keahlian profesional untuk kebutuhan digital Anda</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="glass-card-premium service-card">
+          <div>
+            <div class="service-top-row">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <span class="badge-mini">Custom Development</span>
+            </div>
+            <h3 class="service-name">Pembuatan Website & Landing Page</h3>
+            <p class="service-desc">
+              Membangun website profil sekolah, landing page promosi produk/usaha, atau portofolio pribadi dengan arsitektur web modern yang ringan, cepat, dan SEO-ready.
+            </p>
+            <ul class="service-bullet-list">
+              <li><span>Desain Eksklusif & Adaptif Semua Layar</span></li>
+              <li><span>Integrasi WhatsApp & Formulir Kontak</span></li>
+              <li><span>Kecepatan Akses Tinggi & SEO Friendly</span></li>
+            </ul>
+          </div>
+          <div class="service-card-action">
+            <a href="#kontak" class="btn-service-start">
+              <span>Mulai Proyek</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="glass-card-premium service-card">
+          <div>
+            <div class="service-top-row">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19 7-7 3 3-7 7-3-3z"></path><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="m2 2 7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </div>
+              <span class="badge-mini">UI/UX & Aesthetics</span>
+            </div>
+            <h3 class="service-name">Desain UI/UX & Redesign Website</h3>
+            <p class="service-desc">
+              Merancang antarmuka web modern bertema futuristik samudra (Bioluminescent Glassmorphism) dengan tata letak intuitif dan kenyamanan navigasi maksimal bagi pengguna.
+            </p>
+            <ul class="service-bullet-list">
+              <li><span>Sleek Dark Mode & Glassmorphism Halus</span></li>
+              <li><span>Hirarki Informasi & Navigasi Intuitif</span></li>
+              <li><span>Konsistensi Komponen & Tipografi Modern</span></li>
+            </ul>
+          </div>
+          <div class="service-card-action">
+            <a href="#kontak" class="btn-service-start">
+              <span>Mulai Proyek</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="glass-card-premium service-card">
+          <div>
+            <div class="service-top-row">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <span class="badge-mini">Speed & Optimization</span>
+            </div>
+            <h3 class="service-name">Optimasi Kinerja & Mobile-First</h3>
+            <p class="service-desc">
+              Memastikan website Anda berjalan super mulus di semua perangkat (ponsel cerdas, tablet, laptop) dengan waktu muat di bawah 1 detik tanpa lag animasi.
+            </p>
+            <ul class="service-bullet-list">
+              <li><span>100% Mobile-Friendly & Fluid Layout</span></li>
+              <li><span>Optimasi Aset Gambar & CSS Bersih</span></li>
+              <li><span>Animasi Halus 60 FPS Tanpa Mengurangi Speed</span></li>
+            </ul>
+          </div>
+          <div class="service-card-action">
+            <a href="#kontak" class="btn-service-start">
+              <span>Mulai Proyek</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="glass-card-premium service-card">
+          <div>
+            <div class="service-top-row">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+              </div>
+              <span class="badge-mini">Backend & RPL System</span>
+            </div>
+            <h3 class="service-name">Aplikasi Web & Integrasi Basis Data</h3>
+            <p class="service-desc">
+              Pengembangan fitur dinamis berbasis PHP dan MySQL: sistem manajemen data siswa/inventaris, autentikasi pengguna, operasi CRUD, dan integrasi REST API.
+            </p>
+            <ul class="service-bullet-list">
+              <li><span>Struktur Database MySQL yang Ternormalisasi</span></li>
+              <li><span>Operasi CRUD & Validasi Data Aman</span></li>
+              <li><span>Integrasi Dashboard & Laporan Realtime</span></li>
+            </ul>
+          </div>
+          <div class="service-card-action">
+            <a href="#kontak" class="btn-service-start">
+              <span>Mulai Proyek</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Consultation Banner -->
+      <div class="consultation-banner">
+        <div>
+          <h4 class="banner-title">Punya ide proyek, aplikasi sekolah, atau kebutuhan khusus?</h4>
+          <p class="banner-desc">Konsultasikan kebutuhan Anda tanpa biaya dan mari wujudkan solusi web yang memukau.</p>
+        </div>
+        <a href="#kontak" class="btn-tide">
+          <span>Konsultasi Gratis</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: ALUR KERJA (WORKFLOW 01 - 04)
+    ============================================================ -->
+    <section id="alur-kerja" class="section-container">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Proses & Metodologi</p>
+        <h2 class="section-title">Bagaimana kita mewujudkan proyek impian Anda</h2>
+      </div>
+
+      <div class="workflow-grid">
+        <!-- Step 1 -->
+        <div class="glass-card-premium workflow-step-card">
+          <div>
+            <div class="step-header">
+              <span class="step-num">01</span>
+              <div class="step-icon">💬</div>
+            </div>
+            <h3 class="step-title">Konsultasi & Kebutuhan</h3>
+            <p class="step-desc">
+              Mendiskusikan ide proyek, tujuan aplikasi, target audiens, dan rincian fitur kunci untuk merancang cetak biru yang kokoh.
+            </p>
+            <ul class="step-bullet-list">
+              <li><span>Analisis Kebutuhan Pengguna</span></li>
+              <li><span>Penentuan Fitur & User Story</span></li>
+              <li><span>Sitemap & Struktur Halaman Awal</span></li>
+            </ul>
+          </div>
+          <div class="step-progress-line"><div class="line-fill" style="width: 25%;"></div></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card-premium workflow-step-card">
+          <div>
+            <div class="step-header">
+              <span class="step-num">02</span>
+              <div class="step-icon">🎨</div>
+            </div>
+            <h3 class="step-title">Desain UI/UX & Prototipe</h3>
+            <p class="step-desc">
+              Merancang antarmuka modern bioluminescent glassmorphism dengan tata letak bersih, palet warna harmonis, dan uji alur pengguna.
+            </p>
+            <ul class="step-bullet-list">
+              <li><span>Wireframe & Tata Letak Responsif</span></li>
+              <li><span>Desain Visual Dark Sea Modern</span></li>
+              <li><span>Uji Interaksi & Komponen UI</span></li>
+            </ul>
+          </div>
+          <div class="step-progress-line"><div class="line-fill" style="width: 50%;"></div></div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card-premium workflow-step-card">
+          <div>
+            <div class="step-header">
+              <span class="step-num">03</span>
+              <div class="step-icon">⚡</div>
+            </div>
+            <h3 class="step-title">Koding & Integrasi Sistem</h3>
+            <p class="step-desc">
+              Mengembangkan kode bersih (HTML, CSS, JS, PHP/MySQL) berkecepatan tinggi dengan animasi 60 FPS dan arsitektur modular.
+            </p>
+            <ul class="step-bullet-list">
+              <li><span>Clean & Semantic HTML/CSS/JS</span></li>
+              <li><span>Logika Backend & Integrasi Database</span></li>
+              <li><span>Optimasi Kecepatan & SEO Teknis</span></li>
+            </ul>
+          </div>
+          <div class="step-progress-line"><div class="line-fill" style="width: 75%;"></div></div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-card-premium workflow-step-card">
+          <div>
+            <div class="step-header">
+              <span class="step-num">04</span>
+              <div class="step-icon">🚀</div>
+            </div>
+            <h3 class="step-title">Pengujian & Peluncuran</h3>
+            <p class="step-desc">
+              Pengujian menyeluruh lintas perangkat dan browser, penerapan ke hosting/domain publik, serta pendampingan pemeliharaan.
+            </p>
+            <ul class="step-bullet-list">
+              <li><span>Cross-Browser & Device Testing</span></li>
+              <li><span>Deployment ke Server / Vercel</span></li>
+              <li><span>Dokumentasi & Garansi Dukungan</span></li>
+            </ul>
+          </div>
+          <div class="step-progress-line"><div class="line-fill" style="width: 100%;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: KEAHLIAN & TEKNOLOGI (SKILLS)
+    ============================================================ -->
+    <section id="keahlian" class="section-container">
+      <div class="skills-header-row">
+        <div>
+          <p class="section-tag"><span class="tag-line"></span>Keahlian & Teknologi</p>
+          <h2 class="section-title">Perangkat teknis yang saya kuasai di RPL</h2>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="filter-tab-group" id="skills-filter-group">
+          <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+          <button type="button" class="filter-btn" data-filter="frontend">Front-End</button>
+          <button type="button" class="filter-btn" data-filter="backend">Back-End & DB</button>
+          <button type="button" class="filter-btn" data-filter="tools">Tools & Desain</button>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid" id="skills-grid">
+        
+        <!-- HTML5 -->
+        <div class="glass-card-premium skill-card" data-category="frontend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🌐</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-percent">95%</span>
+              </div>
+              <span class="skill-category-label">Semantik & SEO On-Page</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 95%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="glass-card-premium skill-card" data-category="frontend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🎨</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">CSS3 & Styling</h3>
+                <span class="skill-percent">92%</span>
+              </div>
+              <span class="skill-category-label">Flexbox, Grid & Glassmorphism</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 92%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="glass-card-premium skill-card" data-category="frontend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">⚡</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">JavaScript ES6+</h3>
+                <span class="skill-percent">88%</span>
+              </div>
+              <span class="skill-category-label">DOM Manipulation, Async & Web API</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 88%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="glass-card-premium skill-card" data-category="backend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🐘</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">PHP (RPL Core)</h3>
+                <span class="skill-percent">84%</span>
+              </div>
+              <span class="skill-category-label">Server-Side, OOP & Session</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 84%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="glass-card-premium skill-card" data-category="backend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🐬</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">MySQL Database</h3>
+                <span class="skill-percent">82%</span>
+              </div>
+              <span class="skill-category-label">Query Relasional, ERD & Normalisasi</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 82%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="glass-card-premium skill-card" data-category="frontend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🌊</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Tailwind CSS</h3>
+                <span class="skill-percent">86%</span>
+              </div>
+              <span class="skill-category-label">Utility-First & Rapid Prototyping</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 86%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap 5 -->
+        <div class="glass-card-premium skill-card" data-category="frontend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🅱️</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Bootstrap 5</h3>
+                <span class="skill-percent">85%</span>
+              </div>
+              <span class="skill-category-label">Grid System & Admin Dashboards</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 85%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="glass-card-premium skill-card" data-category="tools">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🐙</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Git & GitHub</h3>
+                <span class="skill-percent">85%</span>
+              </div>
+              <span class="skill-category-label">Version Control & Kolaborasi Tim</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 85%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma -->
+        <div class="glass-card-premium skill-card" data-category="tools">
+          <div class="skill-info">
+            <div class="skill-icon-badge">📐</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Figma</h3>
+                <span class="skill-percent">82%</span>
+              </div>
+              <span class="skill-category-label">UI Mockups, Wireframing & Asset</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 82%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESTful API -->
+        <div class="glass-card-premium skill-card" data-category="backend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🔗</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">RESTful API</h3>
+                <span class="skill-percent">80%</span>
+              </div>
+              <span class="skill-category-label">JSON, Fetch, Endpoint Consumption</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 80%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VS Code -->
+        <div class="glass-card-premium skill-card" data-category="tools">
+          <div class="skill-info">
+            <div class="skill-icon-badge">💻</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">VS Code & Debugging</h3>
+                <span class="skill-percent">95%</span>
+              </div>
+              <span class="skill-category-label">Workflow, Extensions & DevTools</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 95%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Performance -->
+        <div class="glass-card-premium skill-card" data-category="frontend">
+          <div class="skill-info">
+            <div class="skill-icon-badge">🚀</div>
+            <div class="skill-meta">
+              <div class="skill-title-row">
+                <h3 class="skill-name">Web Performance</h3>
+                <span class="skill-percent">86%</span>
+              </div>
+              <span class="skill-category-label">Lighthouse 90+, Lazy Load & Core Vitals</span>
+            </div>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress-fill" style="width: 86%;">
+              <span class="progress-shine"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: PORTOFOLIO PROYEK TERPILIH (PROJECTS - 100% RPL)
+    ============================================================ -->
+    <section id="proyek" class="section-container">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Karya & Portofolio RPL</p>
+        <h2 class="section-title">Hasil implementasi nyata siswa RPL SMK Telkom Lampung</h2>
+      </div>
+
+      <!-- Project Filter Buttons -->
+      <div class="project-filter-row">
+        <div class="filter-tab-group" id="projects-filter-group">
+          <button type="button" class="filter-btn active" data-proj-filter="all">Semua Proyek</button>
+          <button type="button" class="filter-btn" data-proj-filter="school">Aplikasi Sekolah</button>
+          <button type="button" class="filter-btn" data-proj-filter="tourism">Pariwisata</button>
+          <button type="button" class="filter-btn" data-proj-filter="ecommerce">E-Commerce</button>
+        </div>
+      </div>
+
+      <div class="projects-list" id="projects-list">
+        
+        <!-- PROJECT 1: E-Presensi SMK Telkom Lampung (FEATURED) -->
+        <article class="glass-card-premium project-card project-card-featured" data-proj-cat="school">
+          <div class="project-grid">
+            <div class="project-media">
+              <img src="assets/project-epresensi.jpg" alt="Preview Aplikasi E-Presensi SMK Telkom Lampung" class="project-thumb-img" />
+              <div class="project-badge-overlay">
+                <span class="featured-badge">⭐ Proyek Unggulan RPL</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category-tag">Sistem Manajemen Sekolah</span>
+                  <span class="project-index">01</span>
+                </div>
+                <h3 class="project-title">E-Presensi & Portal Akademik SMK Telkom Lampung</h3>
+                <p class="project-desc">
+                  Sistem otomasi presensi siswa dan rekapitulasi data akademik harian berbasis web yang dirancang khusus untuk lingkungan SMK Telkom Lampung. Dilengkapi QR Code scanner presensi mandiri, grafik persentase kehadiran mingguan, serta modul izin siswa terpadu.
+                </p>
+
+                <!-- Key Highlights -->
+                <div class="project-features-chips">
+                  <span class="feature-chip">✓ QR Scanner Presensi</span>
+                  <span class="feature-chip">✓ Dashboard Grafik Kehadiran</span>
+                  <span class="feature-chip">✓ Rekap Laporan Otomatis</span>
+                  <span class="feature-chip">✓ Multi-Role (Siswa, Guru, Admin)</span>
+                </div>
+
+                <!-- Tech Tags -->
+                <div class="tech-tags-row">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP & MySQL</span>
+                  <span class="tech-tag">Chart.js</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn-tide btn-open-modal" data-project-id="epresensi">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+                <a href="#kontak" class="btn-ghost-tide">
+                  <span>Tanya Proyek Ini</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Telkom Tourism & Lampung Explorer -->
+        <article class="glass-card-premium project-card" data-proj-cat="tourism">
+          <div class="project-grid">
+            <div class="project-media">
+              <img src="assets/project-tourism.jpg" alt="Preview Web Wisata Lampung Explorer" class="project-thumb-img" />
+              <div class="project-badge-overlay">
+                <span class="featured-badge">🌴 Bahari & Budaya</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category-tag">Portal Wisata & Pemandu Interaktif</span>
+                  <span class="project-index">02</span>
+                </div>
+                <h3 class="project-title">Telkom Tourism — Pesona Bahari Lampung</h3>
+                <p class="project-desc">
+                  Portal informasi pariwisata modern untuk mempromosikan destinasi bahari eksotis Lampung (Pantai Gigi Hiu, Teluk Kiluan, Pulau Pahawang). Menggabungkan peta rute interaktif, kalkulator estimasi liburan, dan galeri beresolusi tinggi dengan konsep bioluminescent.
+                </p>
+
+                <div class="project-features-chips">
+                  <span class="feature-chip">✓ Peta Interaktif Destinasi</span>
+                  <span class="feature-chip">✓ Estimasi Biaya Wisata</span>
+                  <span class="feature-chip">✓ Panduan Transportasi Rute</span>
+                </div>
+
+                <div class="tech-tags-row">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">Vanilla CSS</span>
+                  <span class="tech-tag">JavaScript ES6+</span>
+                  <span class="tech-tag">Glassmorphism</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn-tide btn-open-modal" data-project-id="tourism">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+                <a href="#kontak" class="btn-ghost-tide">
+                  <span>Tanya Proyek Ini</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: TechnoStore RPL SMK Telkom -->
+        <article class="glass-card-premium project-card" data-proj-cat="ecommerce">
+          <div class="project-grid">
+            <div class="project-media">
+              <img src="assets/project-technostore.jpg" alt="Preview TechnoStore RPL SMK Telkom" class="project-thumb-img" />
+              <div class="project-badge-overlay">
+                <span class="featured-badge">🛒 E-Commerce & Kasir</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category-tag">E-Commerce & IT Catalog</span>
+                  <span class="project-index">03</span>
+                </div>
+                <h3 class="project-title">TechnoStore RPL — Katalog Perangkat IT</h3>
+                <p class="project-desc">
+                  Platform etalase digital dan kasir daring untuk karya software dan perangkat keras buatan siswa RPL SMK Telkom Lampung. Memiliki keranjang belanja dinamis, filter kategori hardware, serta fitur checkout pesan langsung ke WhatsApp admin secara otomatis.
+                </p>
+
+                <div class="project-features-chips">
+                  <span class="feature-chip">✓ Dynamic Shopping Cart</span>
+                  <span class="feature-chip">✓ Checkout WhatsApp Otomatis</span>
+                  <span class="feature-chip">✓ Panel Kelola Stok Produk</span>
+                </div>
+
+                <div class="tech-tags-row">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">LocalStorage</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn-tide btn-open-modal" data-project-id="technostore">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+                <a href="#kontak" class="btn-ghost-tide">
+                  <span>Tanya Proyek Ini</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: Smart Library RPL SMK Telkom -->
+        <article class="glass-card-premium project-card" data-proj-cat="school">
+          <div class="project-grid">
+            <div class="project-media">
+              <img src="assets/project-smartlibrary.jpg" alt="Preview Smart Library SMK Telkom" class="project-thumb-img" />
+              <div class="project-badge-overlay">
+                <span class="featured-badge">📚 Literasi & Manajemen</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-category-tag">Sistem Informasi Perpustakaan</span>
+                  <span class="project-index">04</span>
+                </div>
+                <h3 class="project-title">Smart Library — Perpustakaan Digital SMK Telkom</h3>
+                <p class="project-desc">
+                  Aplikasi perpustakaan digital cerdas untuk mendukung budaya literasi siswa SMK Telkom Lampung. Dilengkapi pencarian judul buku instan, status ketersediaan rak, integrasi barcode kartu siswa, serta pelacakan batas waktu pengembalian buku.
+                </p>
+
+                <div class="project-features-chips">
+                  <span class="feature-chip">✓ Pencarian Realtime Buku</span>
+                  <span class="feature-chip">✓ Sistem Barcode ISBN & Siswa</span>
+                  <span class="feature-chip">✓ Notifikasi Jatuh Tempo Pinjam</span>
+                </div>
+
+                <div class="tech-tags-row">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">Bootstrap 5</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <button type="button" class="btn-tide btn-open-modal" data-project-id="smartlibrary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+                <a href="#kontak" class="btn-ghost-tide">
+                  <span>Tanya Proyek Ini</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: FAQ (PERTANYAAN UMUM)
+    ============================================================ -->
+    <section id="faq" class="section-container max-w-4xl">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Pertanyaan Umum</p>
+        <h2 class="section-title">Hal yang sering ditanyakan seputar kerja sama & keahlian</h2>
+      </div>
+
+      <div class="faq-accordion-list">
+        <!-- FAQ 1 -->
+        <div class="glass-card-premium faq-item active">
+          <button type="button" class="faq-trigger" aria-expanded="true">
+            <div class="faq-question-wrap">
+              <span class="faq-badge">Q1</span>
+              <span class="faq-question">Berapa lama estimasi pengerjaan sebuah website?</span>
+            </div>
+            <div class="faq-right-badge">
+              <span class="faq-topic">Waktu Pengerjaan</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer-panel">
+            <p>
+              Untuk Website Portofolio atau Landing Page promosi biasanya selesai dalam waktu 3–5 hari kerja. Untuk sistem web yang membutuhkan integrasi basis data MySQL atau backend PHP (seperti portal sekolah atau kasir toko), estimasinya berkisar antara 1–2 minggu tergantung kompleksitas modul yang Anda inginkan.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-card-premium faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-question-wrap">
+              <span class="faq-badge">Q2</span>
+              <span class="faq-question">Apakah Anda siap menerima tawaran Magang (PKL) atau Freelance?</span>
+            </div>
+            <div class="faq-right-badge">
+              <span class="faq-topic">Ketersediaan</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer-panel">
+            <p>
+              Tentu saja! Sebagai siswa aktif Rekayasa Perangkat Lunak (RPL) SMK Telkom Lampung, saya sangat terbuka untuk program Praktik Kerja Lapangan (PKL) / Magang Industri, maupun tawaran proyek freelance pembuatan dan pemeliharaan website baik secara remote maupun on-site di area Lampung.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-card-premium faq-item">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-question-wrap">
+              <span class="faq-badge">Q3</span>
+              <span class="faq-question">Apakah tampilan website dijamin responsif di perangkat ponsel?</span>
+            </div>
+            <div class="faq-right-badge">
+              <span class="faq-topic">Mobile-First</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer-panel">
+            <p>
+              Ya, 100%. Saya menerapkan metodologi Mobile-First development dengan CSS modern dan pengujian ketat di berbagai resolusi layar. Semua tombol, tata letak kartu, dan teks otomatis beradaptasi sehingga pengguna ponsel cerdas mendapatkan pengalaman navigasi yang mulus dan nyaman.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item glass-card-premium">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-question-wrap">
+              <span class="faq-badge">Q4</span>
+              <span class="faq-question">Bagaimana jika saya belum memiliki materi tulisan atau konsep desain?</span>
+            </div>
+            <div class="faq-right-badge">
+              <span class="faq-topic">Konsultasi</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer-panel">
+            <p>
+              Tidak perlu khawatir! Kita dapat berdiskusi melalui WhatsApp atau Google Meet. Saya akan membantu merumuskan struktur menu, skema warna yang sesuai dengan karakter brand/sekolah Anda, hingga membuatkan draf konten awal untuk Anda tinjau.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item glass-card-premium">
+          <button type="button" class="faq-trigger" aria-expanded="false">
+            <div class="faq-question-wrap">
+              <span class="faq-badge">Q5</span>
+              <span class="faq-question">Teknologi apa saja yang Anda gunakan untuk membuat web?</span>
+            </div>
+            <div class="faq-right-badge">
+              <span class="faq-topic">Teknologi</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer-panel">
+            <p>
+              Untuk sisi antarmuka (Front-End) saya menguasai HTML5 Semantik, Vanilla CSS, Tailwind CSS, Bootstrap 5, serta JavaScript modern (ES6+). Untuk sisi Back-End dan basis data, saya menggunakan PHP murni maupun OOP serta database MySQL, didukung oleh Git & GitHub untuk version control.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Direct WA helper -->
+      <div class="faq-wa-card">
+        <div class="faq-wa-left">
+          <div class="wa-badge-icon">💬</div>
+          <div>
+            <h4 class="faq-wa-title">Masih ada pertanyaan lain yang belum terjawab?</h4>
+            <p class="faq-wa-sub">Saya siap menjawab pertanyaan Anda dan mendiskusikan solusi terbaik.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo%20Khairan,%20saya%20tertarik%20untuk%20berdiskusi%20proyek%20web" target="_blank" rel="noopener noreferrer" class="btn-emerald">
+          <span>Tanya via WhatsApp</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: LOKASI & GAMER HUD (PLAYER_LOCATION.exe)
+    ============================================================ -->
+    <section id="alamat" class="section-container">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Lokasi & Game Arena</p>
+        <h2 class="section-title">Temukan koordinat saya di peta & coba game interaktif</h2>
+      </div>
+
+      <!-- Achievement Banner -->
+      <div class="achievement-banner">
+        <div class="achievement-left">
+          <span class="achievement-trophy">🏆</span>
+          <div>
+            <p class="achievement-title">ACHIEVEMENT UNLOCKED: TELKOM RPL EXPLORER!</p>
+            <p class="achievement-sub">Sistem HUD & Mini-Game Interaktif Aktif — +100 EXP</p>
+          </div>
+        </div>
+        <div class="achievement-right">
+          <span class="live-indicator-dot"></span>
+          <span class="live-indicator-text">SYSTEM ONLINE</span>
+        </div>
+      </div>
+
+      <!-- Retro Terminal HUD Window -->
+      <div class="gamer-hud-window glass-card-premium">
+        <!-- Terminal Header -->
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="t-dot dot-red"></span>
+            <span class="t-dot dot-yellow"></span>
+            <span class="t-dot dot-green"></span>
+          </div>
+          <span class="terminal-title">PLAYER_LOCATION.exe — KHAIRAN_ALDAN_RPL</span>
+          <span class="terminal-version">v2.4.0 — STABLE</span>
+        </div>
+
+        <div class="terminal-main-grid">
+          
+          <!-- Left: Radar Screen -->
+          <div class="radar-column">
+            <div class="radar-scan-beam"></div>
+            
+            <!-- Compass Indicator -->
+            <div class="compass-rose">
+              <div>N</div>
+              <div class="compass-mid"><span>W</span><span class="compass-star">✦</span><span>E</span></div>
+              <div>S</div>
+            </div>
+
+            <!-- Coordinates Info -->
+            <div class="coord-info">
+              <div>LAT: -5.3971° S</div>
+              <div>LNG: 105.2668° E</div>
+              <div class="coord-sub">ZONE: LAMPUNG, INDONESIA</div>
+            </div>
+
+            <!-- Radar Concentric Rings -->
+            <div class="radar-rings-wrap" aria-hidden="true">
+              <div class="radar-ring ring-1"></div>
+              <div class="radar-ring ring-2"></div>
+              <div class="radar-ring ring-3"></div>
+              <div class="radar-pulse-ring"></div>
+            </div>
+
+            <!-- Target Pin -->
+            <div class="radar-center-marker">
+              <div class="marker-box">
+                <span class="marker-flag">🇮🇩</span>
+                <span class="marker-ping"></span>
+              </div>
+              <p class="marker-label">► YOU ARE HERE ◄</p>
+              <p class="marker-sub">SMK TELKOM LAMPUNG • RPL CAMPUS</p>
+            </div>
+          </div>
+
+          <!-- Right: Character Stats & Quest -->
+          <div class="rpg-stats-column">
+            <div class="rpg-hero-row">
+              <div class="rpg-avatar-box">K</div>
+              <div class="rpg-meta">
+                <h3 class="rpg-name">KHAIRAN_ALDAN.EXE</h3>
+                <p class="rpg-role">◆ Web Developer • Lv.2 RPL Specialist</p>
+              </div>
+              <div class="rpg-online-status">
+                <span class="pulse-beacon-small"></span>
+                <span>ACTIVE</span>
+              </div>
+            </div>
+
+            <!-- HP / MP Bars -->
+            <div class="rpg-gauges">
+              <div class="gauge-row">
+                <span class="gauge-label text-hp">HP</span>
+                <div class="gauge-bar-track">
+                  <div class="gauge-bar-fill fill-hp" style="width: 98%;"></div>
+                </div>
+                <span class="gauge-value">98 / 100</span>
+              </div>
+              <div class="gauge-row">
+                <span class="gauge-label text-mp">MP</span>
+                <div class="gauge-bar-track">
+                  <div class="gauge-bar-fill fill-mp" style="width: 92%;"></div>
+                </div>
+                <span class="gauge-value">92 / 100</span>
+              </div>
+            </div>
+
+            <!-- RPG Attribute Stats -->
+            <div class="rpg-attributes-grid">
+              <div class="attr-box">
+                <span class="attr-name">STR (Logic)</span>
+                <div class="attr-track"><div class="attr-fill" style="width: 88%;"></div></div>
+                <span class="attr-val">88</span>
+              </div>
+              <div class="attr-box">
+                <span class="attr-name">INT (Coding)</span>
+                <div class="attr-track"><div class="attr-fill attr-blue" style="width: 92%;"></div></div>
+                <span class="attr-val">92</span>
+              </div>
+              <div class="attr-box">
+                <span class="attr-name">WIS (Design)</span>
+                <div class="attr-track"><div class="attr-fill attr-purple" style="width: 90%;"></div></div>
+                <span class="attr-val">90</span>
+              </div>
+              <div class="attr-box">
+                <span class="attr-name">AGI (Speed)</span>
+                <div class="attr-track"><div class="attr-fill attr-orange" style="width: 86%;"></div></div>
+                <span class="attr-val">86</span>
+              </div>
+            </div>
+
+            <!-- Profile Details List -->
+            <div class="rpg-data-list">
+              <div class="rpg-data-item">
+                <span class="rpg-label">📍 Institusi</span>
+                <span class="rpg-val">SMK Telkom Lampung (RPL)</span>
+              </div>
+              <div class="rpg-data-item">
+                <span class="rpg-label">🕐 Timezone</span>
+                <span class="rpg-val">WIB (UTC+7)</span>
+              </div>
+              <div class="rpg-data-item">
+                <span class="rpg-label">💻 Status</span>
+                <span class="rpg-val text-primary font-bold">Open for Internship & Project</span>
+              </div>
+              <div class="rpg-data-item">
+                <span class="rpg-label">📧 Email</span>
+                <span class="rpg-val text-primary">khairanaldan@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Quest Log -->
+            <div class="rpg-quest-box">
+              <p class="quest-tag">📜 ACTIVE QUEST LOG</p>
+              <p class="quest-desc">
+                <span class="text-primary">►</span> Hubungi <strong class="text-primary">Khairan Aldan Kurniawan</strong> untuk memulai proyek website baru!
+              </p>
+              <p class="quest-reward">
+                <span class="reward-star">★</span> Reward: Antarmuka memikat, clean code RPL & kolaborasi seru.
+              </p>
+            </div>
+
+            <!-- Interactive Bug Hunter Mini-Game trigger -->
+            <div class="minigame-cta-box">
+              <button type="button" id="start-minigame-btn" class="btn-minigame">
+                <span>🎮 BUKA MINI GAME: CYBER BUG HUNTER</span>
+                <span>►</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Terminal Footer -->
+        <div class="terminal-footer">
+          <span class="terminal-status-text">
+            <span class="blink-cursor">█</span> Menunggu instruksi...
+          </span>
+          <a href="#kontak" class="terminal-cmd-link">[ TEKAN UNTUK HUBUNGI SAYA ] ►</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: HUBUNGI & KOLABORASI (CONTACT)
+    ============================================================ -->
+    <section id="kontak" class="section-container">
+      <div class="section-header">
+        <p class="section-tag"><span class="tag-line"></span>Hubungi & Kolaborasi</p>
+        <h2 class="section-title">Mari wujudkan ide proyek digital bersama</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Cards -->
+        <div class="glass-card-premium contact-info-card">
+          <div class="aurora-blob contact-blob"></div>
+          
+          <div class="relative z-10">
+            <h3 class="contact-headline">Punya pertanyaan, proyek, atau tawaran magang?</h3>
+            <p class="contact-sub">
+              Saya selalu menyambut dengan hangat setiap peluang kolaborasi, pembuatan website profil, landing page, maupun sistem web RPL. Kirim pesan kapan saja!
+            </p>
+
+            <!-- Direct Email Copy Box -->
+            <div class="copy-email-box">
+              <span class="copy-email-label">EMAIL RESMI</span>
+              <div class="copy-email-row">
+                <span class="copy-email-text" id="email-address-text">khairanaldan@gmail.com</span>
+                <button type="button" class="btn-copy-email" id="btn-copy-email" title="Salin Alamat Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span id="copy-btn-text">Salin</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Social / Channels List -->
+            <ul class="contact-channel-list">
+              <!-- WhatsApp -->
+              <li>
+                <a href="https://wa.me/6281234567890?text=Halo%20Khairan,%20saya%20ingin%20berdiskusi%20terkait%20website" target="_blank" rel="noopener noreferrer" class="channel-card channel-wa">
+                  <div class="channel-left">
+                    <div class="channel-icon-wrap icon-wa">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+                    </div>
+                    <div>
+                      <p class="channel-name">WhatsApp</p>
+                      <p class="channel-handle text-wa">+62 812-3456-7890</p>
+                    </div>
+                  </div>
+                  <svg class="channel-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </li>
+
+              <!-- GitHub -->
+              <li>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-left">
+                    <div class="channel-icon-wrap icon-gh">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </div>
+                    <div>
+                      <p class="channel-name">GitHub</p>
+                      <p class="channel-handle">github.com/khairanaldan</p>
+                    </div>
+                  </div>
+                  <svg class="channel-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </li>
+
+              <!-- Instagram -->
+              <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-left">
+                    <div class="channel-icon-wrap icon-ig">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </div>
+                    <div>
+                      <p class="channel-name">Instagram</p>
+                      <p class="channel-handle">@khairanaldan</p>
+                    </div>
+                  </div>
+                  <svg class="channel-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Response time indicator -->
+            <div class="response-time-badge">
+              <span class="pulse-beacon-small"></span>
+              <span>Waktu respon rata-rata: &lt; 24 jam</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="glass-card-premium contact-form-card">
+          <h3 class="form-title">Kirim Pesan Cepat</h3>
+          <p class="form-sub">Tuliskan kebutuhan Anda dan saya akan membalas secepat mungkin.</p>
+
+          <form id="contact-form" class="cyber-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">NAMA LENGKAP</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Masukkan nama Anda" class="glass-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">ALAMAT EMAIL</label>
+              <input type="email" id="contact-email" name="email" required placeholder="nama@email.com" class="glass-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">SUBJEK / TOPIK</label>
+              <input type="text" id="contact-subject" name="subject" required placeholder="Contoh: Pembuatan Website / Magang RPL" class="glass-input" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">ISI PESAN</label>
+              <textarea id="contact-message" name="message" rows="4" required placeholder="Ceritakan ide proyek Anda, fitur yang dibutuhkan, atau tawaran kerja sama..." class="glass-input resize-none"></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn-tide btn-form-submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Kirim Sekarang</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Bio -->
+        <div class="footer-col-main">
+          <div class="brand-link">
+            <div class="brand-badge"><span class="brand-initials">KAK</span></div>
+            <div class="brand-text">
+              <span class="brand-name text-tide-shimmer">Khairan Aldan Kurniawan</span>
+              <span class="brand-sub">Siswa RPL SMK Telkom Lampung</span>
+            </div>
+          </div>
+          <p class="footer-bio-text">
+            Portofolio resmi Web Developer & Siswa Rekayasa Perangkat Lunak SMK Telkom Lampung. Berdedikasi menghasilkan karya digital yang estetik, modern, cepat, dan teruji.
+          </p>
+          <div class="footer-location-tag">
+            <span class="pulse-beacon-small"></span>
+            <span>Berbasis di Lampung, Indonesia • Terbuka untuk Kolaborasi & Magang</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigasi Cepat -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#layanan">Layanan & Solusi</a></li>
+            <li><a href="#alur-kerja">Alur Kerja</a></li>
+            <li><a href="#keahlian">Keahlian RPL</a></li>
+            <li><a href="#proyek">Portofolio Proyek</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontak">Hubungi Saya</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Media Sosial & Kolaborasi -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Hubungi</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="mailto:khairanaldan@gmail.com">Kirim Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          © 2026 Khairan Aldan Kurniawan — Dibuat dengan tema Samudra Bioluminescent.
+        </p>
+        <div class="footer-tech-badge">
+          <span>SMK Telkom Lampung • Rekayasa Perangkat Lunak</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING ACTION BUTTONS (WHATSAPP & BACK TO TOP)
+  ============================================================ -->
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Khairan,%20saya%20tertarik%20dengan%20portofolio%20web%20Anda" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Konsultasi Cepat via WhatsApp">
+    <div class="wa-icon-glow">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+      <span class="wa-ping-beacon"></span>
+    </div>
+    <div class="wa-text-group">
+      <span class="wa-label">Konsultasi Cepat</span>
+      <span class="wa-val">Chat WhatsApp</span>
+    </div>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button type="button" id="back-to-top-btn" class="back-to-top-btn" aria-label="Kembali ke Atas" title="Kembali ke Atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ============================================================
+       MODAL DETAIL PROYEK INTERAKTIF
+  ============================================================ -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-container glass-card-premium">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Detail Proyek">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img id="modal-proj-img" src="" alt="Pratinjau Proyek" class="modal-img" />
+          <div class="modal-badge-wrapper">
+            <span id="modal-proj-badge" class="featured-badge">Proyek RPL</span>
+          </div>
+        </div>
+
+        <div class="modal-info-panel">
+          <span id="modal-proj-cat" class="project-category-tag">Kategori</span>
+          <h3 id="modal-proj-title" class="modal-title">Judul Proyek</h3>
+          <p id="modal-proj-desc" class="modal-desc">Deskripsi proyek...</p>
+
+          <div class="modal-section-block">
+            <h4 class="modal-subhead">Fitur Utama</h4>
+            <ul id="modal-features-list" class="modal-features-list"></ul>
+          </div>
+
+          <div class="modal-section-block">
+            <h4 class="modal-subhead">Teknologi & Tools Digunakan</h4>
+            <div id="modal-tech-tags" class="tech-tags-row"></div>
+          </div>
+
+          <div class="modal-footer-action">
+            <a href="#kontak" class="btn-tide" id="modal-discuss-btn">
+              <span>Diskusikan Proyek Serupa</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MODAL MINI GAME: CYBER BUG HUNTER
+  ============================================================ -->
+  <div id="minigame-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="minigame-container glass-card-premium">
+      <div class="minigame-header">
+        <div class="minigame-title-group">
+          <span class="game-icon">👾</span>
+          <div>
+            <h3 class="minigame-title">CYBER BUG HUNTER — RPL MINI GAME</h3>
+            <p class="minigame-sub">Kumpulkan koin cyan & hindari bug merah!</p>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="minigame-close-btn" aria-label="Tutup Game">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="game-hud-bar">
+        <div class="hud-score">SKOR: <span id="game-score">0</span></div>
+        <div class="hud-lives">NYAWA: <span id="game-lives">❤️❤️❤️</span></div>
+        <div class="hud-highscore">BEST: <span id="game-highscore">0</span></div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="game-canvas" width="600" height="380"></canvas>
+        <div id="game-overlay" class="game-overlay">
+          <h4 id="game-overlay-title" class="overlay-title">CYBER BUG HUNTER</h4>
+          <p id="game-overlay-sub" class="overlay-sub">Gunakan tombol Panah / WASD / Sentuh layar untuk mengendalikan drone diver!</p>
+          <button type="button" id="game-start-btn" class="btn-tide">MULAI MAIN</button>
+        </div>
+      </div>
+
+      <div class="minigame-controls-hint">
+        <span>Kontrol: Tombol Panah (← ↑ ↓ →) atau A/W/S/D • Layar Sentuh di Ponsel</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div id="cyber-toast" class="cyber-toast" aria-live="polite">
+    <span id="toast-icon" class="toast-icon">✨</span>
+    <span id="toast-message" class="toast-message">Pesan notifikasi</span>
+  </div>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
